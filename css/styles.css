@@ -6,11 +6,226 @@
       z-index: 0;
 } */
 
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10%;
+}
+
+.banner img {
+  width: 100%;
+  height: 30% !important;
+  display: block;
+}
+
+.banner-img{
+  width: 100%;
+  height: 50% !important;
+  filter: blur(4px);
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.banner-hdr-text{
+  font-family: 'Montserrat', sans-serif;
+  color: #16697A !important;
+}
+
+p {
+    font-family: 'Overpass', sans-serif !important;
+    font-size: 100 !important;
+}
+
+.banner-text{
+  font-family: 'Dancing Script', cursive !important;
+  color: goldenrod !important;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.play-btn{
+  border-radius: 20px !important;
+}
+
+.play-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .play-container {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --radius: 35vmin;
+  --frame-size: calc(var(--radius) / 3);
+  --d-outer: calc(var(--radius) * 2);
+  --d-inner: calc(var(--d-outer) - var(--frame-size));
+  --font-size: calc(var(--radius) / 10);
+}
+
+.circle {
+  position: relative;
+  width: var(--d-outer);
+  height: var(--d-outer);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center !important;
+  margin: auto;
+  align-items: center !important;
+}
+
+.logo {
+  position: absolute;
+  width: var(--d-inner);
+  height: var(--d-inner);
+  background: url(https://i.ibb.co/xCBDPqM/Group-A0002-modified.png);
+  background-size: cover;
+  border-radius: 50%;
+  filter: contrast(1.5);
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: small !important;
+  color: #16697A !important;
+  font-family: 'Dancing Script', cursive !important;
+  animation: rotateText 18s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text p span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 var(--radius);
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #16697A;
+  border-radius: 23px;
+  padding: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.scroll-icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  background-image: url('https://i.ibb.co/xShsp26/icons8-double-down.gif');
+  background-size: cover;
+}
+
+.marquee-container {
+  overflow: hidden;
+  background: #16697A !important;
+  padding: 2.5%;
+}
+
+.text-marquee {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  animation: marqueeAnimation 30s linear infinite;
+}
+
+.moving-text {
+  color: #fff !important;
+  display: inline-block;
+  font-size: xx-large;
+  padding-right: 20px;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .ipad-img {
       position: relative;
       top: -100px; /* adjust as needed */
       left: 10px; /* adjust as needed */
       z-index: 1;
+      width: 50% !important;
+      height: 50% !important;
+}
+
+.price-list-btn {
+  font-size: 14px;
+  padding: 6px 12px;
+  color: #fff !important;
+  background-color: var(--bs-primary);
+  text-decoration: none;
+  border-radius: 3px;
+  margin-left: 5%;
 }
 
 :root {
@@ -19,9 +234,9 @@
   --bs-purple: #7464a1;
   --bs-pink: #d63384;
   --bs-red: #a16468;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #e4c662;
-  --bs-green: #67c29c;
+  --bs-orange: #DB6400;
+  --bs-yellow: #FFA62B;
+  --bs-green: #16697A;
   --bs-teal: #64a19d;
   --bs-cyan: #1cabc4;
   --bs-black: #000;
@@ -37,18 +252,20 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #64a19d;
-  --bs-secondary: #7464a1;
+  --bs-primary: #16697A;
+  /* Sky Blue */
+  --bs-secondary: #FFA62B;
+  /* Pale Gold */
   --bs-success: #67c29c;
-  --bs-info: #1cabc4;
+  --bs-info: #16697A;
   --bs-warning: #e4c662;
   --bs-danger: #a16468;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-black: #000;
   --bs-white: #fff;
-  --bs-primary-rgb: 100, 161, 157;
-  --bs-secondary-rgb: 116, 100, 161;
+  --bs-primary-rgb: #16697A !important;
+  --bs-secondary-rgb: #FFA62B !important;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
   --bs-warning-rgb: 228, 198, 98;
@@ -80,8 +297,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #64a19d;
-  --bs-link-hover-color: #50817e;
+  --bs-link-color: #16697A;
+  --bs-link-hover-color: #87CEEB;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #faf4e0;
 }
@@ -2860,19 +3077,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #16697A;
+  --bs-btn-border-color: #87CEEB;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #87CEEB;
+  --bs-btn-hover-border-color: #87CEEB;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #50817e;
-  --bs-btn-active-border-color: #4b7976;
+  --bs-btn-active-bg: #87CEEB;
+  --bs-btn-active-border-color: #87CEEB;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #64a19d;
-  --bs-btn-disabled-border-color: #64a19d;
+  --bs-btn-disabled-bg: #87CEEB;
+  --bs-btn-disabled-border-color: #87CEEB;
 }
 
 .btn-secondary {
@@ -3811,7 +4028,7 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-color: rgba(0, 0, 0, 0.719);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
@@ -4434,7 +4651,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #5a918d;
+  --bs-accordion-active-color: #16697A;
   --bs-accordion-active-bg: #f0f6f5;
 }
 
@@ -11005,6 +11222,7 @@ body {
 }
 #mainNav .navbar-brand {
   color: #000;
+  opacity: 100% !important;
   font-weight: 700;
   padding: 0.9rem 0;
 }
@@ -11080,7 +11298,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 99%, #000 100%), url("../assets/img/nexusnode-home.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%, #000 100%), url("https://i.ibb.co/GCcWTbv/Group-A0001-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11091,7 +11309,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 255), rgba(255, 255, 255, 0));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -11125,8 +11343,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-top: 3rem;
 }
 .about-section p {
   margin-bottom: 5rem;

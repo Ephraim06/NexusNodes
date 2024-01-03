@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -52,3 +44,34 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Optional: Add more items to the marquee dynamically
+// const marqueeList = document.querySelector('.text-marquee');
+// const newItems = ['SALES LAUNCHED •', 'DONT MISS OUT •', 'SALES LAUNCHED •'];
+
+// newItems.forEach(item => {
+//   const li = document.createElement('li');
+//   li.className = 'moving-text';
+//   li.textContent = item;
+//   marqueeList.appendChild(li);
+// });
+
+function scrollToSection() {
+    document.getElementById('about')
+    console.log('Scrolling to section...');
+    }
+
+// CIRCLE TEXT
+const text = document.querySelector(".text p");
+
+text.innerHTML = text.innerText
+	.split("")
+	.map(
+		(char, i) => `<span style="transform:rotate(${i * 5.8}deg)">${char}</span>`
+	)
+	.join("");
+
+// Force redirect to first slide
+window.location.href="#slide-1";
+
+// All images are from https://unsplash.com/

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/00c02a5085.js"
+      crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image with Light Info</title>
+    <style>
+      /* Style for the pulsating button */
+      #lightButton {
+        position: absolute;
+        top: 20px;
+        margin-top: 10%;
+        margin-left: 8%;
+        font-size: x-large;
+        color: goldenrod;
+        border-color: #333 !important;
+        border: 3px solid;
+        border-radius: 50px;
+        left: 20px;
+        padding: 10px;
+        animation: pulsate 1.5s infinite;
+        z-index: 1000; /* Ensure the button is above the info window */
+      }
+
+      @keyframes pulsate {
+        0% {
+          transform: scale(0.8);
+          opacity: 0.7;
+        }
+        50% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(0.8);
+          opacity: 0.7;
+        }
+      }
+
+      /* Style for the info window */
+      #infoWindow {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        opacity: 5;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999; /* Ensure the info window is below the button */
+      }
+
+      img {
+        width: 60%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Image container -->
+    <div style="position: relative">
+      <!-- Image -->
+      <img
+        src="https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg"
+        alt="Your Image"
+        id="image" />
+
+      <!-- Button to activate light info -->
+      <i id="lightButton" class="fa-solid fa-circle fa-beat-fade"></i>
+
+      <!-- Info window -->
+      <div id="infoWindow">
+        <h3>Crystal Light</h3>
+        <p>This is information about a very expensive light.</p>
+      </div>
+    </div>
+
+    <script>
+      // Get the button and info window elements
+      var lightButton = document.getElementById('lightButton');
+      var infoWindow = document.getElementById('infoWindow');
+
+      // Add a click event listener to the button
+      lightButton.addEventListener('click', function () {
+        // Position the info window next to the button
+        var buttonRect = lightButton.getBoundingClientRect();
+        infoWindow.style.top = buttonRect.top + 'px';
+        infoWindow.style.left = buttonRect.right + 'px';
+
+        // Toggle the display of the info window
+        if (infoWindow.style.display === 'block') {
+          infoWindow.style.display = 'none';
+        } else {
+          infoWindow.style.display = 'block';
+        }
+      });
+
+      // Close the info window if the user clicks outside of it
+      document.addEventListener('click', function (event) {
+        if (
+          !infoWindow.contains(event.target) &&
+          event.target !== lightButton
+        ) {
+          infoWindow.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
