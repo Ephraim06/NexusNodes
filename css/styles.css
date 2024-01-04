@@ -6,6 +6,14 @@
       z-index: 0;
 } */
 
+.nectar-scroll-icon{
+  font-size: 2%;
+}
+
+video{
+  border-radius: 4px !important;
+  border: 2px solid goldenrod !important;
+}
 
 .row {
   margin: 15px;
@@ -138,7 +146,7 @@ p {
   height: var(--d-inner);
   background: url(https://i.ibb.co/xCBDPqM/Group-A0002-modified.png);
   background-size: cover;
-  border: goldenrod 4px solid;
+  border: goldenrod 2px solid;
   border-radius: 50%;
   filter: contrast(1.5);
 }
@@ -170,33 +178,77 @@ p {
   transform-origin: 0 var(--radius);
 }
 
-.scroll-btn {
-  position: fixed;
-  bottom: 20px;
+.scroll-icon {
+  position: relative;
+  margin-top: -5%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgb(255, 255, 255);
-  border: 2px solid #16697A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffffb9;
   border-radius: 23px;
-  padding: 10px;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  transition: background-color 0.3s, border-color 0.3s;
+  padding: 20px 5px;
+  animation: myAnim 8s ease-in 0s infinite normal forwards;
+  font-size: 80%;
+  color: #fff;
 }
 
-.scroll-btn:hover {
-  background-color: #fff;
-  border-color: #fff;
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-.scroll-icon {
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin: 0 auto;
-  background-image: url('https://i.ibb.co/xShsp26/icons8-double-down.gif');
-  background-size: cover;
+.scroll-icon:hover{
+  background-color: transparent;
+  color: #fff !important;
+  border-color: #fff !important;
+  transition: background-color 1s, border-color 1s;
+}
+
+@media (max-width: 768px) {
+  .scroll-icon {
+    position: relative;
+    margin-top: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-container {
@@ -11270,8 +11322,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #16697A;
+  border: 1px solid #16697A;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11326,15 +11378,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #16697A;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #16697A;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #16697A;
   }
 }
 
@@ -11354,7 +11406,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%, #000 100%), url("https://i.ibb.co/GCcWTbv/Group-A0001-2.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%, #000 100%), url("https://images.unsplash.com/photo-1604795345735-f492d8df2d8d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
