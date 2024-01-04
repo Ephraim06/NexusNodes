@@ -44,6 +44,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
@@ -100,23 +105,22 @@
         class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
           <div class="text-center">
-            <h2 class="text-white mx-auto mt-2 mb-5 montserrat-script">
+            <h2 class="text-white mx-auto mt-2 mb-2 montserrat-script">
               The Most Anticipated
             </h2>
-            <h1 class="mx-auto my-0 banner-text">Albus Waveside Villa</h1>
-            <h2 class="text-white mx-auto mt-2 mb-5 montserrat-script">
-              Selling from R15 995 000
-            </h2>
+            <h1 class="mx-auto my-0 banner-text mb-lg-5">
+              <strong>Albus Waveside Villa</strong>
+            </h1>
             <a
-              class="btn btn-primary montserrat-script bg-site-clr"
+              class="btn btn-primary montserrat-script bg-site-clr mt-5"
               href="#about"
               >Make an Enquiry</a
             >
-            <!-- <div class="scroll-btn" onclick="scrollToSection()">
-              <div class="scroll-icon"></div>
-            </div> -->
           </div>
         </div>
+      </div>
+      <div class="" onclick="scrollToSection()">
+        <i class="scroll-icon fa-solid fa-circle fa-bounce"></i>
       </div>
     </header>
     <!-- marquee -->
@@ -146,10 +150,10 @@
                 </p>
               </div>
             </div>
-            <p class="circle-description text-black">
+            <p class="circle-description text-black montserrat-script">
               Introducing
-              <span class="banner-text"
-                ><strong>"Albus Waveside Villa"</strong></span
+              <span style="color: goldenrod !important"
+                >Albus Waveside Villa</span
               >
               – an exclusive new property development nestled in the prestigious
               Sunset Beach, Cape Town. Enjoy breathtaking sea views and
@@ -167,30 +171,30 @@
     <div class="gallery-row container d-none d-md-block">
       <div class="row">
         <a
-          href="assets/img/renders/Group_B0007.png"
+          href="https://images.unsplash.com/photo-1614077595151-abeb2550c49c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           data-toggle="lightbox"
           data-gallery="gallery"
           class="col-md-4">
           <img
-            src="assets/img/renders/Group_B0007.png"
+            src="https://images.unsplash.com/photo-1614077595151-abeb2550c49c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="img-fluid rounded" />
         </a>
         <a
-          href="assets/img/renders/Group_B0010.png"
+          href="https://images.unsplash.com/photo-1594749794741-4c38168df1f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           data-toggle="lightbox"
           data-gallery="gallery"
           class="col-md-4">
           <img
-            src="assets/img/renders/Group_B0010.png"
+            src="https://images.unsplash.com/photo-1594749794741-4c38168df1f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="img-fluid rounded" />
         </a>
         <a
-          href="assets/img/renders/Group_B0011.png"
+          href="https://images.pexels.com/photos/5791381/pexels-photo-5791381.jpeg"
           data-toggle="lightbox"
           data-gallery="gallery"
           class="col-md-4">
           <img
-            src="assets/img/renders/Group_B0011.png"
+            src="https://images.pexels.com/photos/5791381/pexels-photo-5791381.jpeg"
             class="img-fluid rounded" />
         </a>
       </div>
@@ -199,15 +203,18 @@
     <!-- lifestyle Section -->
     <div class="play-container">
       <div class="image-container">
-        <img class="play-btn" src="assets/img/play-btn.jpg" alt="Play Button" />
+        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          ><img
+            class="play-btn"
+            src="assets/img/play-btn.jpg"
+            alt="Play Button"
+        /></a>
       </div>
       <div class="content">
         <h3 class="banner-text">ONE-OF-A-KIND</h3>
         <h2 class="banner-hdr-text">LIFESTYLE LIVING</h2>
         <p>
-          <span class="banner-text"
-            ><strong>"Albus Waveside Villa"</strong></span
-          >
+          <span style="color: goldenrod !important">Albus Waveside Villa</span>
           seamlessly blends luxury living with the natural beauty of the
           surroundings. Imagine waking up to the sound of the waves, with Table
           Mountain and Robben Island as your daily backdrop.
@@ -215,9 +222,7 @@
         <p>
           Whether you're a surfing enthusiast or prefer a leisurely stroll along
           the beach,
-          <span class="banner-text"
-            ><strong>"Albus Waveside Villa"</strong></span
-          >
+          <span style="color: goldenrod !important">Albus Waveside Villa</span>
           offers a lifestyle of elegance and tranquility.
         </p>
         <div class="button-container">
@@ -226,6 +231,44 @@
             class="no-bg-btn-gold montserrat-script btn btn-primary"
             >Learn More</a
           >
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5 dancing-script"
+              style="color: #16697a !important"
+              id="staticBackdropLabel">
+              Albus Waveside Villa
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <video
+              rounded
+              poster="assets/img/play-btn.jpg"
+              muted
+              controls
+              height="auto"
+              width="100%"
+              src="assets/img/videos/ssb-vid.mp4"></video>
+          </div>
         </div>
       </div>
     </div>
@@ -244,11 +287,11 @@
       <div class="image-container">
         <img
           class="play-btn"
-          src="assets/img/renders/Group_A0003.png"
+          src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Play Button" />
       </div>
       <div class="content">
-        <h3 class="banner-text">ESTATE LIVING MADE EASY</h3>
+        <h3 class="banner-text">COASTAL LIVING MADE EASY</h3>
         <h2 class="banner-hdr-text">ELEGANT FINISHES</h2>
         <p>
           Our development features modern residences, combining the allure of
@@ -273,7 +316,7 @@
       <div class="image-container">
         <img
           class="play-btn"
-          src="assets/img/renders/Group_A0010.png"
+          src="https://images.unsplash.com/photo-1595182084742-abd9ecc0f0c8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Play Button" />
       </div>
       <div class="content">
@@ -281,15 +324,12 @@
         <h2 class="banner-hdr-text">FAMILY HOME</h2>
         <p>
           At
-          <span class="banner-text"
-            ><strong>"Albus Waveside Villa"</strong></span
-          >, we redefine the concept of modern living. Come home to
-          sophistication, comfort, and a touch of architectural brilliance.
-          Embrace a lifestyle where the scenic beauty of Sunset Beach is an
-          integral part of your everyday life. Welcome to a home where luxury
-          knows no bounds.
+          <span style="color: goldenrod !important">Albus Waveside Villa</span>,
+          we redefine the concept of modern living. Come home to sophistication,
+          comfort, and a touch of architectural brilliance. Embrace a lifestyle
+          where the scenic beauty of Sunset Beach is an integral part of your
+          everyday life. Welcome to a home where luxury knows no bounds.
         </p>
-        <h6 class="banner-hdr-text">SELLING FROM R15 995 000</h6>
         <div class="button-container">
           <a
             href="#location"
