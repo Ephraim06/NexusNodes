@@ -57,9 +57,19 @@ window.addEventListener('DOMContentLoaded', event => {
 // });
 
 function scrollToSection() {
-    document.getElementById('about')
-    console.log('Scrolling to section...');
+    // Get the element with the ID "about"
+    var aboutSection = document.getElementById('about');
+
+    // Check if the element exists
+    if (aboutSection) {
+        // Use scrollIntoView to scroll to the "about" section
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+        console.log('Scrolling to section...');
+    } else {
+        console.log('Section not found');
     }
+}
+
 
 // CIRCLE TEXT
 const text = document.querySelector(".text p");
