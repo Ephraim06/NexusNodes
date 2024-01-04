@@ -20,6 +20,11 @@
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,13 +36,23 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,200&family=Overpass:wght@100;200;300;400;600;700;900&display=swap"
       rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">Albus Waveside Villa </a>
+        <a class="navbar-brand dancing-script" href="#page-top"
+          >Albus Waveside Villa
+        </a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -52,25 +67,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link montserrat-script" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="sales.html">Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link montserrat-script" href="gallery.html"
+                >Gallery</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Location</a>
+              <a class="nav-link montserrat-script" href="#about">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="downloads.html">Downloads</a>
+              <a class="nav-link montserrat-script" href="downloads.html"
+                >Downloads</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#signup">Contact</a>
+              <a class="nav-link montserrat-script" href="#signup">Contact</a>
             </li>
           </ul>
-          <a href="#home" class="btn btn-primary">PRICE LIST</a>
+          <a href="#home" class="btn btn-primary montserrat-script"
+            >PRICE LIST</a
+          >
         </div>
       </div>
     </nav>
@@ -80,14 +101,16 @@
         class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
           <div class="text-center">
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            <h2 class="text-white-50 mx-auto mt-2 mb-5 montserrat-script">
               The Most Anticipated
             </h2>
-            <h1 class="mx-auto my-0 text-uppercase">Albus Waveside Villa</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            <h1 class="mx-auto my-0 banner-text">Albus Waveside Villa</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5 montserrat-script">
               Selling from R5 250 000
             </h2>
-            <a class="btn btn-primary" href="#about">Make an Enquiry</a>
+            <a class="btn btn-primary montserrat-script" href="#about"
+              >Make an Enquiry</a
+            >
             <!-- <div class="scroll-btn" onclick="scrollToSection()">
               <div class="scroll-icon"></div>
             </div> -->
@@ -122,19 +145,54 @@
                 </p>
               </div>
             </div>
-            <p class="text-black">
-              Sunset Beach, a chic residential area, features a popular beach
-              for surfing and kitesurfing, offering stunning views of Table
-              Mountain and Robben Island. Grand waterfront mansions and upscale
-              guesthouses characterize the neighborhood, known for seasonal
-              whale watching and pelican-filled wetlands at the Table Bay Nature
-              Reserve.
+            <p class="circle-description text-black">
+              Introducing
+              <span class="banner-text"
+                ><strong>"Albus Waveside Villa"</strong></span
+              >
+              – an exclusive new property development nestled in the prestigious
+              Sunset Beach, Cape Town. Enjoy breathtaking sea views and
+              picturesque scenes of Table Mountain from the comfort of your
+              home. Our secure location ensures peace of mind for residents.
             </p>
           </div>
         </div>
         <a class="btn btn-primary" href="#about">View Sales Brochure</a>
       </div>
     </section>
+
+    <div class="gallery-row container d-none d-md-block">
+      <div class="row">
+        <a
+          href="assets/img/renders/Group_B0007.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4">
+          <img
+            src="assets/img/renders/Group_B0007.png"
+            class="img-fluid rounded" />
+        </a>
+        <a
+          href="assets/img/renders/Group_B0010.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4">
+          <img
+            src="assets/img/renders/Group_B0010.png"
+            class="img-fluid rounded" />
+        </a>
+        <a
+          href="assets/img/renders/Group_B0011.png"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4">
+          <img
+            src="assets/img/renders/Group_B0011.png"
+            class="img-fluid rounded" />
+        </a>
+      </div>
+    </div>
+
     <!-- lifestyle Section -->
     <div class="play-container">
       <div class="image-container">
@@ -144,18 +202,25 @@
         <h3 class="banner-text">ONE-OF-A-KIND</h3>
         <h2 class="banner-hdr-text">LIFESTYLE LIVING</h2>
         <p>
-          Le Coste Estate is not just another gated precinct, it’s a lifestyle
-          destination, with a strong emphasis on everyday living needs. Along
-          with its impressive selection of homes, Le Coste surpasses
-          expectations when it comes to amenities featured within the estate.
+          <span class="banner-text"
+            ><strong>"Albus Waveside Villa"</strong></span
+          >
+          seamlessly blends luxury living with the natural beauty of the
+          surroundings. Imagine waking up to the sound of the waves, with Table
+          Mountain and Robben Island as your daily backdrop.
         </p>
         <p>
-          Situated in the Northern Suburbs of Cape Town, Le Coste Estate
-          provides a convenient central location for all its residents, whether
-          it’s for work or leisure, education, or everyday essentials.
+          Whether you're a surfing enthusiast or prefer a leisurely stroll along
+          the beach,
+          <span class="banner-text"
+            ><strong>"Albus Waveside Villa"</strong></span
+          >
+          offers a lifestyle of elegance and tranquility.
         </p>
         <div class="button-container">
-          <a href="#location" class="btn btn-primary">Learn More</a>
+          <a href="#location" class="montserrat-script btn btn-primary"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
@@ -166,7 +231,7 @@
         src="assets/img/banner-imgjpg.jpg"
         alt="Banner Image" />
       <div class="banner-content">
-        <h1 class="banner-text">Uncover the Perfect Home</h1>
+        <h1 class="banner-text text-white">Uncover the Perfect Home</h1>
       </div>
     </div>
 
@@ -179,19 +244,21 @@
       </div>
       <div class="content">
         <h3 class="banner-text">ESTATE LIVING MADE EASY</h3>
-        <h2 class="banner-hdr-text">Albus Waveside Villa</h2>
+        <h2 class="banner-hdr-text">ELEGANT FINISHES</h2>
         <p>
-          Each Terrace Home is a perfect balance of practicality and style.
-          Generous proportions allow for comfort and versatility, while premium
-          finishes and appliances add a sophisticated touch.
+          Our development features modern residences, combining the allure of
+          grand waterfront mansions with the sophistication of upscale
+          guesthouses.
         </p>
         <p>
-          Situated in the Northern Suburbs of Cape Town, Le Coste Estate
-          provides a convenient central location for all its residents, whether
-          it’s for work or leisure, education, or everyday essentials.
+          Experience the thrill of seasonal whale watching and discover the
+          charm of pelican-filled wetlands at the nearby Table Bay Nature
+          Reserve.
         </p>
         <div class="button-container">
-          <a href="#location" class="btn btn-primary">Learn More</a>
+          <a href="#location" class="montserrat-script btn btn-primary"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
@@ -206,13 +273,16 @@
         <h3 class="banner-text">ROOM TO GROW</h3>
         <h2 class="banner-hdr-text">FAMILY HOME</h2>
         <p>
-          These Family Homes embrace the freedom and beauty of space. Offering
-          large open-plan designs and superb finishes, each home embodies
-          luxury, functionality, and pure comfort.
+          Welcome to
+          <span class="banner-text"
+            ><strong>"Albus Waveside Villa"</strong></span
+          >, where every day feels like a retreat in the lap of coastal luxury.
         </p>
-        <h4>SELLING FROM R2 530 000</h4>
+        <h6 class="banner-hdr-text">SELLING FROM R5 250 000</h6>
         <div class="button-container">
-          <a href="#location" class="btn btn-primary">Learn More</a>
+          <a href="#location" class="montserrat-script btn btn-primary"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
@@ -221,26 +291,9 @@
     <section class="projects-section" id="projects">
       <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
-        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-          <div class="col-xl-8 col-lg-7">
-            <img
-              class="img-fluid mb-3 mb-lg-0"
-              src="https://images.pexels.com/photos/4559602/pexels-photo-4559602.jpeg"
-              alt="..." />
-          </div>
+        <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
           <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Innovation</h4>
-              <p class="text-black-50 mb-0">
-                We stay at the forefront of web development trends to bring you
-                cutting-edge solutions that make your business stand out.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text-right text-center text-lg-left">
+            <div class="featured-text-right text-lg-left">
               <h4>Affordability</h4>
               <p class="text-black-50 mb-0">
                 We believe quality web development should be accessible.
@@ -255,17 +308,17 @@
               src="https://images.pexels.com/photos/3833052/pexels-photo-3833052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="..." />
           </div>
-        </div>
+        </div> -->
         <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
           <div class="col-lg-6">
             <img
               class="img-fluid"
-              src="assets/img/demo-image-01.jpg"
+              src="assets/img/renders/Group_C0003.png"
               alt="..." />
           </div>
           <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
+            <div class="bg-site-clr text-center h-100 project">
               <div class="d-flex h-100">
                 <div
                   class="project-text w-100 my-auto text-center text-lg-left">
@@ -284,15 +337,15 @@
           <div class="col-lg-6">
             <img
               class="img-fluid"
-              src="assets/img/demo-image-02.jpg"
+              src="assets/img/renders/Group_C0005.png"
               alt="..." />
           </div>
           <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
+            <div class="bg-site-clr text-center h-100 project">
               <div class="d-flex h-100">
                 <div
                   class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
+                  <h4 class="text-white">Mountains Views</h4>
                   <p class="mb-0 text-white-50">
                     Another example of a project with its respective
                     description. These sections work well responsively as well!
@@ -310,7 +363,10 @@
         <div class="row gx-4 gx-lg-5">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+            <h4 class="banner-text text-white montserrat-script">INTRIGUED?</h4>
+            <h2 class="text-white mb-5 banner-text">
+              Request More information!
+            </h2>
             <!-- * * * * * * * * * * * * * * *-->
             <!-- * * SB Forms Contact Form * *-->
             <!-- * * * * * * * * * * * * * * *-->
@@ -381,27 +437,17 @@
       </div>
     </section>
     <!-- Contact-->
-    <section class="contact-section bg-black">
+    <section class="contact-section bg-site-clr">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <i class="fas fa-map-marked-alt banner-text mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
                 <hr class="my-4 mx-auto" />
-                <div class="small text-black-50">Cape Town | Western Cape</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4 mx-auto" />
                 <div class="small text-black-50">
-                  <a href="#!">info@nexusnodes.co.za</a>
+                  Sunset Beach, Cape Town | Western Cape
                 </div>
               </div>
             </div>
@@ -409,24 +455,42 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <i class="fas fa-envelope banner-text mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4 mx-auto" />
+                <div class="small text-black-50">
+                  <a href="#!">info@albuswaveside.co.za</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt banner-text mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone</h4>
                 <hr class="my-4 mx-auto" />
-                <div class="small text-black-50">061 851 4124</div>
+                <div class="small text-black-50">076 280 0303</div>
               </div>
             </div>
           </div>
         </div>
         <div class="social d-flex justify-content-center">
-          <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-          <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+          <a class="mx-2 text-white" href="#!"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="mx-2 text-white" href="#!"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="mx-2 text-white" href="#!"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
     <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
-      <div class="container px-4 px-lg-5">Copyright &copy; NexusNodes 2023</div>
+    <footer class="footer bg-site-clr small text-center text-white">
+      <div class="container px-4 px-lg-5">
+        Copyright &copy; Albus Waveside Villa 2023
+      </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

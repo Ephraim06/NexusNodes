@@ -75,3 +75,9 @@ text.innerHTML = text.innerText
 window.location.href="#slide-1";
 
 // All images are from https://unsplash.com/
+
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
