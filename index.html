@@ -260,7 +260,6 @@
             <video
               rounded
               poster="assets/img/play-btn.jpg"
-              muted
               controls
               height="auto"
               width="100%"
@@ -284,7 +283,7 @@
       <div class="image-container">
         <img
           class="play-btn"
-          src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1528458650905-abcea1d34d36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Play Button" />
       </div>
       <div class="content">
@@ -541,6 +540,55 @@
         </div>
       </div>
     </section>
+    <!-- widget -->
+    <div class="widget-container">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="wa-widget-icon fa-brands fa-whatsapp"></i>
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="widget-modal modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 dancing-script" id="exampleModalLabel">
+              CONTACT OUR TEAM
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Click on our Development Experts below to begin a chat on
+              WhatsApp, or send an email to sales@albuswaveside.co.za
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer-->
     <footer class="footer bg-site-clr small text-center text-white">
       <div class="container px-4 px-lg-5">
