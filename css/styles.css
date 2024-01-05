@@ -6,6 +6,22 @@
       z-index: 0;
 } */
 
+.w3-border-bottom {
+  border-bottom: 1px solid #ccc !important;
+}
+
+.w3-border-light-grey,
+.w3-hover-border-light-grey:hover,
+.w3-border-light-gray,
+.w3-hover-border-light-gray:hover {
+  border-color: #f1f1f1 !important;
+}
+
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
 .fs-small{
   font-size: small !important;
 }
@@ -403,6 +419,10 @@ p {
 
 .bg-site-clr{
   background: #16697A !important;
+}
+
+.goldenrod{
+  color: goldenrod !important;
 }
 
 .text-marquee {
