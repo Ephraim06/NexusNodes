@@ -3335,7 +3335,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #87CEEB;
   --bs-btn-disabled-border-color: #87CEEB;
-  border-radius: 20px !important;
+  border-radius: 4px !important;
 }
 
 .price-btn {
