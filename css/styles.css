@@ -21,9 +21,54 @@
   transition: opacity 0.3s;
 }
 
+@keyframes scrollAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+
 /* Show the button when scrolling down */
 #scroll-btn.show {
   display: block;
+  animation: scrollAnim 1s ease-in 0.3s 1 normal forwards;
 }
 
 #scroll-btn:hover{
@@ -199,8 +244,23 @@ input[type="text"] {
   background-color: #45a049;
 }
 
+.map {
+  width: 100%;
+  height: 450px;
+  /* Keep the specified height */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 767px) {
+  .map {
+    width: 100% !important;
+    height: auto;
+    /* Allow the height to adjust automatically on mobile */
+  }
+}
+
 .nectar-scroll-icon{
-  font-size: 2%;
+  font-size: 5% !important;
 }
 
 video{
@@ -316,21 +376,6 @@ p {
   padding: 0;
 }
 
-.map {
-  width: 100%;
-  height: 450px;
-  /* Keep the specified height */
-}
-
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 767px) {
-  .map {
-    width: 100% !important;
-    height: auto;
-    /* Allow the height to adjust automatically on mobile */
-  }
-}
-
 .content {
   flex: 1;
   padding: 20px;
@@ -339,6 +384,45 @@ p {
 @media screen and (max-width: 600px) {
   .play-container {
     flex-direction: column;
+  }
+}
+
+.play-container-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+.image-container-right {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Updated styles for desktop layout */
+@media only screen and (min-width: 768px) {
+  .play-container-right {
+    justify-content: space-between;
+  }
+
+  .image-container-right {
+    order: 2;
+  }
+
+  .content {
+    order: 1;
   }
 }
 
@@ -415,7 +499,7 @@ p {
   border: 2px solid #ffffffb9;
   border-radius: 23px;
   padding: 20px 5px;
-  animation: myAnim 8s ease-in 0s infinite normal forwards;
+  animation: myAnim 3s ease-in 0s infinite normal forwards;
   font-size: 80%;
   color: #fff;
 }
