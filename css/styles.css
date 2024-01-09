@@ -270,6 +270,29 @@ p {
   height: auto;
 }
 
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  width: 100%;
+  height: 450px;
+  /* Keep the specified height */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 767px) {
+  .map {
+    width: 100% !important;
+    height: auto;
+    /* Allow the height to adjust automatically on mobile */
+  }
+}
+
 .content {
   flex: 1;
   padding: 20px;
