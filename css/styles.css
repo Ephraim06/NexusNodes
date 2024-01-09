@@ -6,6 +6,25 @@
       z-index: 0;
 } */
 
+#scroll-btn {
+  display: none;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* Show the button when scrolling down */
+#scroll-btn.show {
+  display: block;
+}
+
 .w3-border-bottom {
   border-bottom: 1px solid #ccc !important;
 }
@@ -423,8 +442,9 @@ p {
 
 .scroll-icon:hover{
   background-color: transparent;
-  color: #fff !important;
-  border-color: #fff !important;
+  color: #16697A !important;
+  border-color: goldenrod !important;
+  cursor: pointer;
   transition: background-color 1s, border-color 1s;
 }
 
