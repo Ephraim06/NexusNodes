@@ -110,3 +110,12 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     }
+// Spinner Home
+  var spinner = function () {
+    setTimeout(function () {
+        if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+        }
+    }, 1500);
+};
+spinner();
