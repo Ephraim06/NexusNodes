@@ -48,8 +48,15 @@
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
-
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- FANCYBOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   </head>
   <body id="page-top">
     <!-- Spinner Start -->
@@ -188,7 +195,7 @@
           class="col-md-4">
           <img
             src="https://images.unsplash.com/photo-1614077595151-abeb2550c49c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="img-fluid rounded" />
+            class="img-fluid rounded goldenrod-bdr" />
         </a>
         <a
           href="https://images.unsplash.com/photo-1594749794741-4c38168df1f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -197,7 +204,7 @@
           class="col-md-4">
           <img
             src="https://images.unsplash.com/photo-1594749794741-4c38168df1f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="img-fluid rounded" />
+            class="img-fluid rounded site-clr-bdr" />
         </a>
         <a
           href="https://images.pexels.com/photos/5791381/pexels-photo-5791381.jpeg"
@@ -206,7 +213,7 @@
           class="col-md-4">
           <img
             src="https://images.pexels.com/photos/5791381/pexels-photo-5791381.jpeg"
-            class="img-fluid rounded" />
+            class="img-fluid rounded goldenrod-bdr" />
         </a>
       </div>
     </div>
@@ -346,76 +353,6 @@
       </div>
     </div>
 
-    <!-- Closest Places Start -->
-    <!-- <div class="play-container">
-      <div class="image-container">
-        <h6
-          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
-          Places Nearby
-        </h6>
-        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-          ><img
-            class="play-btn"
-            src="https://images.pexels.com/photos/3832684/pexels-photo-3832684.jpeg"
-            alt="Play Button"
-        /></a>
-      </div>
-      <div
-        style="text-align: center !important"
-        class="content"
-        data-wow-delay="0.1s">
-        <h3 class="banner-text">Places</h3>
-        <h2 class="banner-hdr-text">Travel</h2>
-        <div class="">
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            7.8km to Cape Town | City Center.
-          </p>
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            6.5km to Observatory | Cape Town.
-          </p>
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            6.9km to Canal Walk | Shopping Center.
-          </p>
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            7.9km to Paddocks | Shopping Center.
-          </p>
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            1.6km to Paarden Eiland | Cape Town.
-          </p>
-          <p
-            style="text-align: start !important"
-            class="montserrat-script montserrat-script">
-            <i class="fa-solid fa-location-dot goldenrod"></i>
-            6.3km to Mediclinic Milnerton | Hospital.
-          </p>
-        </div>
-        <div class="button-container">
-          <a
-            href="https://maps.google.com/maps?ll=-33.84872,18.489162&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=27%20Albus%20Dr%20Sunset%20Beach%20Cape%20Town%207435"
-            class="no-bg-btn-site-clr montserrat-script btn btn-primary"
-            >View on Goolge Maps
-            <i class="fa-solid fa-location-dot goldenrod"></i
-          ></a>
-        </div>
-      </div>
-    </div> -->
-    <!-- Closest Places End -->
-
     <div class="play-container">
       <div class="image-container">
         <h6
@@ -510,81 +447,40 @@
         </div>
       </div>
     </div>
-    <!-- Projects-->
     <section class="projects-section" id="projects">
       <div class="container px-4 px-lg-5">
-        <!-- Featured Project Row-->
-        <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text-right text-lg-left">
-              <h4>Affordability</h4>
-              <p class="text-black-50 mb-0">
-                We believe quality web development should be accessible.
-                NexusNodes offers cost-effective services without compromising
-                excellence.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-8 col-lg-7">
-            <img
-              class="img-fluid mb-3 mb-lg-0"
-              src="https://images.pexels.com/photos/3833052/pexels-photo-3833052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="..." />
-          </div>
-        </div> -->
-        <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
           <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="assets/img/renders/Group_C0003.png"
-              alt="..." />
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-site-clr text-center h-100 project">
-              <div class="d-flex h-100">
-                <div
-                  class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white dancing-script">Misty</h4>
-                  <p class="mb-0 text-white montserrat-script">
-                    Luxury meets innovation in Sunset Beach, Cape Town. Nestled
-                    in this chic coastal enclave, our development boasts an
-                    exquisite pool deck with unique features that set it apart.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project Two Row-->
-        <div class="row gx-0 justify-content-center">
-          <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="assets/img/renders/Group_C0005.png"
-              alt="..." />
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-site-clr text-center h-100 project">
-              <div class="d-flex h-100">
-                <div
-                  class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white dancing-script">Mountains Views</h4>
-                  <p class="mb-0 text-white montserrat-script">
-                    This architectural marvel not only enhances the aesthetic
-                    appeal but also provides panoramic views of the surrounding
-                    beauty. Whether you're lounging by the pool or entertaining
-                    guests in the living space, the seamless transition between
-                    indoor and outdoor areas creates a truly immersive
-                    experience.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0001 (2).png"
+              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+              <img src="https://lipsum.app/id/2/200x150" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0002.png">
+              <img src="https://lipsum.app/id/3/200x150" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0003.png">
+              <img src="https://lipsum.app/id/4/200x150" />
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <script type="module">
+      import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js';
+
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+    </script>
+
     <!-- Signup-->
     <section class="signup-section" id="signup">
       <div class="container px-4 px-lg-5">

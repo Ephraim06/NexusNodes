@@ -119,3 +119,11 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
     }, 1500);
 };
 spinner();
+
+ $(document).ready(function() {
+      $('[data-fancybox="gallery"]').fancybox({
+        // Add any Fancybox options or customization here
+      });
+    });
+
+    
