@@ -116,7 +116,7 @@
           </div>
         </div>
       </div>
-      <div class="" onclick="scrollToSection()">
+      <div onclick="scrollToSection()">
         <i class="scroll-icon fa-solid fa-circle fa-bounce"></i>
       </div>
     </header>
@@ -135,32 +135,34 @@
     <section class="about-section text-center" id="about">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="circle">
-            <div class="logo"></div>
-            <div class="text">
-              <p class="dancing-script">
-                <strong
-                  >LOVE WHERE YOU LIVE~ LIVE WHERE YOU LOVE~ LOVE WHERE YOU
-                  LIVE~</strong
-                >
-              </p>
+          <div class="col-lg-8">
+            <div class="circle">
+              <div class="logo"></div>
+              <div class="text">
+                <p class="dancing-script">
+                  <strong
+                    >LOVE WHERE YOU LIVE~ LIVE WHERE YOU LOVE~ LOVE WHERE YOU
+                    LIVE~</strong
+                  >
+                </p>
+              </div>
             </div>
+            <h6
+              class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
+              About
+            </h6>
+            <p
+              class="circle-description text-black montserrat-script w3-border-light-grey w3-border-bottom pt-0">
+              Introducing
+              <span style="color: goldenrod !important"
+                >Albus Waveside Villa</span
+              >
+              – an exclusive new property development nestled in the prestigious
+              Sunset Beach, Cape Town. Enjoy breathtaking sea views and
+              picturesque scenes of Table Mountain from the comfort of your
+              home. Our secure location ensures peace of mind for residents.
+            </p>
           </div>
-          <h6
-            class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
-            About
-          </h6>
-          <p
-            class="circle-description text-black montserrat-script w3-border-light-grey w3-border-bottom pt-0">
-            Introducing
-            <span style="color: goldenrod !important"
-              >Albus Waveside Villa</span
-            >
-            – an exclusive new property development nestled in the prestigious
-            Sunset Beach, Cape Town. Enjoy breathtaking sea views and
-            picturesque scenes of Table Mountain from the comfort of your home.
-            Our secure location ensures peace of mind for residents.
-          </p>
         </div>
         <a class="btn btn-primary no-bg-btn-gold" href="#about"
           >View Sales Brochure</a
@@ -295,7 +297,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3313.5885503183717!2d18.489162!3d-33.84872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5ee4e2abe92f%3A0xb2921647f3dc37bd!2s27%20Albus%20Dr%2C%20Sunset%20Beach%2C%20Cape%20Town%2C%207435!5e0!3m2!1sen!2sza!4v1704645435129!5m2!1sen!2sza"
           width="100%"
-          height="450"
+          height="auto"
           style="border: 0"
           class="map"
           allowfullscreen=""
@@ -797,7 +799,9 @@
     </div>
 
     <!-- Scroll button -->
-    <button id="scroll-btn" onclick="scrollToTop()">Scroll to Top</button>
+    <button id="scroll-btn" onclick="scrollToTop()">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
 
     <!-- Footer-->
     <footer class="footer bg-site-clr small text-center text-white">
