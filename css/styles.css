@@ -6,45 +6,73 @@
       z-index: 0;
 } */
 
+@media screen and (min-width: 600px) {
+  .mobile-gallery {
+    display: none !important;
+  }
+}
+
+.circled-bdr{
+  border: 1px solid goldenrod !important;
+  border-radius: 50px !important;
+  margin-left: 20% !important;
+  margin-right: 20% !important;
+}
+
 /* Add your existing styles here */
 .swiper-container {
   overflow: hidden;
-  position: relative;
+  position: relative !important;
 }
 
 .swiper-wrapper {
   display: flex;
+  margin-bottom: 2% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-gallery {
+    display: none !important;
+  }
 }
 
 .swiper-slide {
   flex: 0 0 auto;
-  width: 60%;
+  width: 50%;
   /* Adjust the width of each slide */
-  margin-right: 20px;
+  margin-right: 10px !important;
   /* Adjust the spacing between slides */
+  cursor: pointer !important;
 }
 
 .swiper-slide img {
   width: 100%;
   height: auto;
+  
 }
+
+.swiper-slide:hover{
+  transform: scale(1.2);
+  z-index: 1;
+  transition: transform 0.2s linear !important;
+  }
 
 /* Fading effect */
 .swiper-container::before,
 .swiper-container::after {
   content: "";
-  position: absolute ;
+  position: absolute;
   top: 0;
   width: 20%;
-  /* Adjust the size of the fading effect */
-  height: 100% !important;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff) !important;
-  /* Adjust the fading color */
-  pointer-events: none;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, -10), #ffffff);
+  z-index: 1;
 }
 
 .swiper-container::before {
   left: 0;
+  transform: scaleX(1);
+  z-index: 2;
 }
 
 .swiper-container::after {
@@ -56,7 +84,7 @@
   color: #16697A !important;
   align-items: center !important;
   margin: auto !important;
-  animation: nextBtn 2s linear 0s infinite normal forwards;
+  animation: nextBtn 6s linear 0s infinite normal forwards;
 }
 
 @keyframes nextBtn {
@@ -75,7 +103,7 @@
   color: #16697A !important;
   align-items: center !important;
   margin: auto !important;
-  animation: prevBtn 2s linear 0s infinite normal forwards;
+  animation: prevBtn 6s linear 0s infinite normal forwards;
 }
 
 @keyframes prevBtn {
@@ -11833,7 +11861,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.2) 100%, #000 100%), url("https://images.unsplash.com/photo-1595157082566-5b6094b4527d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%, #000 100%), url("https://images.pexels.com/photos/5232511/pexels-photo-5232511.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
