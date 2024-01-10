@@ -8,6 +8,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Albus Waveside Villa</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Include Swiper.js styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script
@@ -420,7 +427,7 @@
     <!-- lifestyle Section -->
 
     <div class="play-container">
-      <div class="image-container-right">
+      <div class="image-container">
         <img
           class="play-btn"
           src="https://images.pexels.com/photos/4869432/pexels-photo-4869432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -447,32 +454,67 @@
         </div>
       </div>
     </div>
+
     <section class="projects-section" id="projects">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-          <div class="col-lg-6">
+      <div class="gallery-row swiper-container">
+        <h6
+          style="text-align: center !important"
+          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
+          Albus Waveside Villa - Photo Gallery
+        </h6>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <a
+              class="montserrat-script"
               data-fancybox="gallery"
               data-src="assets/img/renders/Group_A0001 (2).png"
-              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-              <img src="https://lipsum.app/id/2/200x150" />
+              data-caption="Sandstone Front">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0001 (2).png"
+                alt="Image 1" />
             </a>
-
+          </div>
+          <div class="swiper-slide">
             <a
               data-fancybox="gallery"
               data-src="assets/img/renders/Group_A0002.png">
-              <img src="https://lipsum.app/id/3/200x150" />
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0002.png"
+                alt="Image 2" />
             </a>
-
+          </div>
+          <div class="swiper-slide">
             <a
               data-fancybox="gallery"
               data-src="assets/img/renders/Group_A0003.png">
-              <img src="https://lipsum.app/id/4/200x150" />
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0003.png"
+                alt="Image 3" />
             </a>
           </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0004.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0004.png"
+                alt="Image 4" />
+            </a>
+          </div>
+          <!-- Add more slides as needed -->
         </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script type="module">
       import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js';
 
