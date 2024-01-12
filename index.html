@@ -274,120 +274,6 @@
       </div>
     </div>
 
-    <section class="slider-gallery projects-section pt-0" id="projects">
-      <div class="gallery-row swiper-container">
-        <h4
-          style="text-align: center !important"
-          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
-          Interior
-        </h4>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a
-              class="montserrat-script"
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0001 (2).png"
-              data-caption="Sandstone Front">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0001 (2).png"
-                alt="Image 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0002.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0002.png"
-                alt="Image 2" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0003.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0003.png"
-                alt="Image 3" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0004.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0004.png"
-                alt="Image 4" />
-            </a>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-
-      <div class="gallery-row swiper-container pt-0">
-        <h4
-          style="text-align: center !important"
-          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
-          Exterior
-        </h4>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a
-              class="montserrat-script"
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0005.png"
-              data-caption="Sandstone Front">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0005.png"
-                alt="Image 5" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0006.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0006.png"
-                alt="Image 6" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0007.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0007.png"
-                alt="Image 7" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a
-              data-fancybox="gallery"
-              data-src="assets/img/renders/Group_A0008.png">
-              <img
-                class="img-fluid rounded goldenrod-bdr"
-                src="assets/img/renders/Group_A0008.png"
-                alt="Image 8" />
-            </a>
-          </div>
-          <!-- Add more slides as needed -->
-        </div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-
     <section
       class="mobile-gallery projects-section pt-0 justify-content-center"
       id="projects">
@@ -432,16 +318,6 @@
         </div>
       </div>
     </section>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script type="module">
-      import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js';
-
-      Fancybox.bind('[data-fancybox="gallery"]', {
-        //
-      });
-    </script>
 
     <!-- Modal -->
     <div
@@ -692,8 +568,162 @@
     <div class="content">
       <div class="container text-center">
         <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
@@ -780,6 +810,133 @@
         </div>
       </div>
     </div>
+
+    <!-- Fancybox Lightbox Gallery -->
+
+    <section class="slider-gallery projects-section pt-0" id="projects">
+      <div class="gallery-row swiper-container">
+        <h4
+          style="text-align: center !important"
+          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
+          Interior
+        </h4>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              class="montserrat-script"
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0001 (2).png"
+              data-caption="Sandstone Front">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0001 (2).png"
+                alt="Image 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0002.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0002.png"
+                alt="Image 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0003.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0003.png"
+                alt="Image 3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0004.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0004.png"
+                alt="Image 4" />
+            </a>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="gallery-row swiper-container pt-0">
+        <h4
+          style="text-align: center !important"
+          class="montserrat-script w3-border-bottom w3-border-light-grey w3-padding-16 goldenrod">
+          Exterior
+        </h4>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              class="montserrat-script"
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0005.png"
+              data-caption="Sandstone Front">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0005.png"
+                alt="Image 5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0006.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0006.png"
+                alt="Image 6" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0007.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0007.png"
+                alt="Image 7" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              data-fancybox="gallery"
+              data-src="assets/img/renders/Group_A0008.png">
+              <img
+                class="img-fluid rounded goldenrod-bdr"
+                src="assets/img/renders/Group_A0008.png"
+                alt="Image 8" />
+            </a>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js';
+
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+    </script>
+    <!-- Fancybox Lightbox Gallery -->
 
     <!-- Signup-->
     <section class="signup-section" id="signup">
@@ -901,12 +1058,11 @@
         </div>
         <div class="social d-flex justify-content-center">
           <a class="mx-2 text-white" href="#!"
-            ><i class="fab fa-twitter"></i
+            ><i class="fab fa-facebook-f goldenrod"></i
           ></a>
           <a class="mx-2 text-white" href="#!"
-            ><i class="fab fa-facebook-f"></i
+            ><i class="fa-brands fa-instagram fa-lg goldenrod"></i
           ></a>
-          <a class="mx-2 text-white" href="#!"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
