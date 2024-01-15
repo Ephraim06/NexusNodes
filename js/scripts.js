@@ -116,7 +116,7 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
         if ($('#spinner').length > 0) {
             $('#spinner').removeClass('show');
         }
-    }, 1500);
+    }, 50);
 };
 spinner();
 
