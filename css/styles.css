@@ -33,16 +33,13 @@
     height: auto;
   }
 }
-
 @media screen and (max-width: 600px) {
   .play-btn {
-    width: 100% !important;
+    width: 100vw !important;
     height: auto !important;
-    padding: -10 !important;
-    /* Adjust the padding as needed */
-    margin-left: 0 !important;
-    z-index: 2 !important;
-    display: block;
+    align-items: center;
+    z-index: 1;
+    position: inherit;
   }
 }
 
