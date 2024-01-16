@@ -6,6 +6,50 @@
       z-index: 0;
 } */
 
+.site-clr{
+  color: #16697A !important;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.17) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 30% !important;
+    height: auto !important;
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .iphone-img {
+    width: 50% !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .why-albus {
+    width: 50% !important;
+    height: auto !important;
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion {
+    width: 50% !important;
+    height: auto !important;
+    margin-left: 25%;
+  }
+}
+
 .mr-5{
   margin-right: 5% !important;
   color: goldenrod !important;
