@@ -194,6 +194,9 @@
   }
 }
 
+.site-clr{
+  color: #16697A !important;
+}
 
 .goldenrod-bdr{
   border:2px solid goldenrod !important;
@@ -11837,7 +11840,7 @@ body {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000;
+  color: #16697A !important;
   opacity: 100% !important;
   font-weight: 700;
   padding: 0.9rem 0;
@@ -11856,20 +11859,20 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.32);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color:  #16697A !important;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #16697A !important;
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: goldenrod !important;
   }
   #mainNav .nav-link:active {
     color: #fff;
