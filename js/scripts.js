@@ -136,3 +136,45 @@ spinner();
       },
     });
   });
+
+  // Auto wirting text
+
+  const texts = [
+    "Click on our Development Experts below to begin a chat on WhatsApp" +", " + "or send an email to sales@albuswaveside.co.za"
+  ];
+
+  const outputElement = document.getElementById("output");
+  let index = 0;
+
+  function displayText() {
+    const currentText = texts[index];
+    let charIndex = 0;
+
+    function typeCharacter() {
+      if (charIndex < currentText.length) {
+        outputElement.textContent += currentText.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeCharacter, 100); // Adjust typing speed (milliseconds)
+      } else {
+        // Typing complete, move to the next text
+        setTimeout(eraseText, 5000); // Adjust pause before erasing (milliseconds)
+      }
+    }
+
+    function eraseText() {
+      if (outputElement.textContent.length > 0) {
+        outputElement.textContent = outputElement.textContent.slice(0, -1);
+        setTimeout(eraseText, 10); // Adjust erasing speed (milliseconds)
+      } else {
+        // Erasing complete, move to the next text
+        index = (index + 1) % texts.length;
+        setTimeout(displayText, 0); // Adjust pause before typing next text (milliseconds)
+      }
+    }
+
+    // Start the typing process
+    typeCharacter();
+  }
+
+  // Initial call to display text
+  displayText();

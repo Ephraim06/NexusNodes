@@ -6,6 +6,30 @@
       z-index: 0;
 } */
 
+.sponsors {
+  width: 35% !important;
+  height: auto !important;
+}
+
+.sponsors:hover{
+  transform: scale(1.2) !important;
+    transition: all 0.6s ease-in-out;
+    -webkit-transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsors {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.sponsors-col {
+  justify-content: center !important;
+  align-items: center !important;
+  display: grid !important;
+}
+
 html{
   scroll-behavior: smooth !important;
 }
@@ -474,8 +498,18 @@ html{
 .widget-agent-img{
   width: 100% !important;
   height: auto !important;
+  filter: grayscale(1) !important;
 }
 
+.widget-agent-img, .agent-row:hover {
+  transform: scale(0.9) !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.2); /* For Safari 3.1 to
+  CSS3 syntax, which is not supported by Chrome and Safari at the time they were introduced
+  */
+  filter: grayscale(0) !important;
+  }
+  
 .widget-img{
   width: 15% !important;
   height: auto;
@@ -554,6 +588,7 @@ html{
 .close-btn {
   float: right;
   cursor: pointer;
+  color: goldenrod !important;
 }
 
 .chat-content {
@@ -916,12 +951,12 @@ p {
 }
 
 .ipad-img {
-      position: relative;
-      top: -100px; /* adjust as needed */
-      left: 10px; /* adjust as needed */
-      z-index: 1;
-      width: 50% !important;
-      height: 50% !important;
+  position: relative;
+  top: -100px; /* adjust as needed */
+  left: 10px; /* adjust as needed */
+  z-index: 1;
+  width: 50% !important;
+  height: 50% !important;
 }
 
 .price-list-btn {
