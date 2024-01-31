@@ -164,7 +164,7 @@ spinner();
     function eraseText() {
       if (outputElement.textContent.length > 0) {
         outputElement.textContent = outputElement.textContent.slice(0, -1);
-        setTimeout(eraseText, 10); // Adjust erasing speed (milliseconds)
+        setTimeout(eraseText, 500); // Adjust erasing speed (milliseconds)
       } else {
         // Erasing complete, move to the next text
         index = (index + 1) % texts.length;

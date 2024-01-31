@@ -694,12 +694,66 @@ video{
   color: #16697A !important;
 }
 
+.banner-btm {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10%;
+}
+
+.banner-btm img {
+  width: 100%;
+  height: 10% !important;
+  display: block;
+}
+
+.compass-img-btm {
+  width: 100% !important;
+  height: 50% !important;
+}
+
+.banner-img-btm {
+  width: 100%;
+  height: 30% !important;
+  filter: brightness(60%);
+}
+
+.banner-btm, .btm-row{
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+.banner-content-btm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content-btm h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.banner-hdr-text-btm {
+  font-family: 'Montserrat', sans-serif;
+  color: #16697A !important;
+}
+
 p {
     font-family: 'Overpass', sans-serif !important;
     font-size: 100 !important;
 }
 
 .banner-text{
+  font-family: 'Dancing Script', cursive !important;
+  color: goldenrod !important;
+}
+
+.banner-text-btm {
   font-family: 'Dancing Script', cursive !important;
   color: goldenrod !important;
 }
@@ -872,9 +926,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 8px solid #ffffffb9;
+  border: 4px solid #ffffffb9;
   border-radius: 23px;
-  padding: 20px 5px;
+  padding: 20px 10px;
   animation: myAnim 2.5s ease-in-out 0s infinite normal forwards;
   font-size: 80%;
   color: #fff;
@@ -5237,7 +5291,8 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8184523809523809) 100%, rgba(255, 255, 255, 0.7652310924369747) 100%, rgba(255, 255, 255, 0.8240546218487395) 100%);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -12096,7 +12151,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.5px);
 }
 
 .masthead-2 {
@@ -12104,8 +12159,8 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: url('https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg') no-repeat center center;
+  padding: 5rem 0;
+  background: url('https://images.pexels.com/photos/8243003/pexels-photo-8243003.jpeg') no-repeat center center;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
