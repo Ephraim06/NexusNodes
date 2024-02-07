@@ -6,6 +6,22 @@
       z-index: 0;
 } */
 
+/* img {
+  border-radius: 3px !important;
+} */
+
+.feature-icon{
+  font-size: 5rem !important;
+}
+
+
+@media screen and (max-width: 600px) {
+.distance{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+}
+
 @media screen and (max-width: 600px) {
   .poi-img {
     display: none !important;
@@ -279,9 +295,9 @@ html{
 }
 
 .swiper-slide:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 1;
-  transition: transform 0.5s ease-in-out !important;
+  transition: transform 0.2s ease-in-out !important;
   }
 
 /* Fading effect */
@@ -730,8 +746,7 @@ video{
 }
 
 @media screen and (max-width: 600px) {
-  .banner-btm,
-    .btm-row {
+  .banner-btm {
     margin-top: 5% !important;
     margin-bottom: 5% !important;
   }
@@ -784,9 +799,9 @@ p {
   margin: 0;
 }
 
-.play-btn{
+/* .play-btn{
   border-radius: 5px !important;
-}
+} */
 
 .map {
   border-radius: 5px !important;
@@ -819,6 +834,13 @@ p {
   padding: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .image-container, .play-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
 .content {
   flex: 1;
   padding: 20px;
@@ -829,7 +851,6 @@ p {
     flex-direction: column;
   }
 }
-
 
 .play-container-right {
   display: flex;
@@ -892,6 +913,12 @@ p {
 
 .circle-description{
   margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .circle {
+display: none !important;
+  }
 }
 
 .logo {
@@ -1342,10 +1369,6 @@ figure {
 img,
 svg {
   vertical-align: middle;
-}
-
-img {
-  border-radius: 3px !important;
 }
 
 table {
@@ -5505,7 +5528,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--bs-accordion-btn-color);
   text-align: left !important;
   background-color: var(--bs-accordion-btn-bg);
