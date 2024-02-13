@@ -137,6 +137,23 @@ spinner();
     });
   });
 
+  $(document).ready(function() {
+      $('[data-fancybox="gallery-mobile"]').fancybox({
+        // Add any Fancybox options or customization here
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+
   // Auto wirting text
 
   const texts = [

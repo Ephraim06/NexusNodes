@@ -14,6 +14,12 @@
 .video-container-slide {
     display: none !important;
   }
+  .poi-section {
+      margin-top: 0px !important;
+}
+.location-icon {
+  font-size: large !important;
+  padding: 15px 0px 15px 0px !important;
 }
 
 #carousel-mobi {
@@ -28,7 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Center vertically as well */
+  height: 200px;
   margin-bottom: 10px;
 }
 
@@ -45,6 +51,7 @@
   h3,
   h2, h6 {
     text-align: start !important;
+  }
   }
 }
 
@@ -306,6 +313,30 @@ html{
   position: relative !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .swiper-container{
+    height: auto !important;
+    width: 100% !important;
+  }
+  .mobi-gallery-img{
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border: #16697A 2px solid !important;
+  }
+  .gallery-row{
+    height: auto !important;
+    width: 100% !important;
+    margin-top: 0 !important  ;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-fancy-gallery {
+    display: none !important;
+  }
+}
+
 .swiper-wrapper {
   display: flex;
   margin-bottom: 2% !important;
@@ -319,7 +350,7 @@ html{
 
 .swiper-slide {
   flex: 0 0 auto;
-  width: 50%;
+  width: 80%;
   /* Adjust the width of each slide */
   margin-right: 10px !important;
   /* Adjust the spacing between slides */
@@ -359,6 +390,30 @@ html{
 .swiper-container::after {
   right: 0;
   transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-container::before,
+    .swiper-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 15%;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255, 255, 255, -10), #ffffff);
+      z-index: 1;
+    }
+  
+    .swiper-container::before {
+      left: 0;
+      transform: scaleX(1);
+      z-index: 2;
+    }
+  
+    .swiper-container::after {
+      right: 0;
+      transform: scaleX(-1);
+    }
 }
 
 .swiper-button-next{
@@ -848,6 +903,14 @@ p {
   align-items: center;
   padding: 20px;
   margin-top: 10%;
+}
+
+.play-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .image-container {
