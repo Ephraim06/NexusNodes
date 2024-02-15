@@ -27,7 +27,6 @@
   margin-bottom: 30px !important;
 }
 
-/* Video Container */
 .video-container-slide {
   width: 100%;
   background-size: cover;
@@ -38,7 +37,6 @@
   margin-bottom: 10px;
 }
 
-/* Video Styling */
 .video-container-slide video{
   max-width: 100%;
   max-height: 100%;
@@ -74,7 +72,7 @@
 }
 
 .sponsors {
-  width: 35% !important;
+  width: 100% !important;
   height: auto !important;
   margin: auto !important;
 }
@@ -96,6 +94,8 @@
   justify-content: center !important;
   align-items: center !important;
   display: grid !important;
+  margin-left: 5% !important;
+  padding-bottom: 80px !important;
 }
 
 html{
@@ -294,9 +294,12 @@ html{
   height: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 767px) {
   .mobile-gallery {
-    display: none !important;
+    width: 65% !important;
+    height: auto !important;
+    align-items: center !important;
+    margin: auto !important;
   }
 }
 
@@ -344,16 +347,15 @@ html{
 
 @media screen and (max-width: 600px) {
   .slider-gallery {
-    display: none !important;
+    margin-bottom: 0 !important;
+    cursor:  pointer !important;
   }
 }
 
 .swiper-slide {
   flex: 0 0 auto;
   width: 80%;
-  /* Adjust the width of each slide */
   margin-right: 10px !important;
-  /* Adjust the spacing between slides */
   cursor: pointer !important;
 }
 
@@ -369,7 +371,6 @@ html{
   transition: transform 0.2s ease-in-out !important;
   }
 
-/* Fading effect */
 .swiper-container::before,
 .swiper-container::after {
   content: "";
