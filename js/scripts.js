@@ -1,4 +1,17 @@
 
+  // Wait for the document to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Get a reference to your custom-div and the contactModal
+    const customDiv = document.querySelector(".custom-div");
+    const contactModal = new bootstrap.Modal(document.getElementById("contactModal"));
+
+    // Add a click event listener to open the modal
+    customDiv.addEventListener("click", function () {
+        contactModal.show();
+        console.log("Clicked")
+    });
+});
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -195,3 +208,5 @@ spinner();
 
   // Initial call to display text
   displayText();
+
+

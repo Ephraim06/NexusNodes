@@ -10,6 +10,157 @@
   border-radius: 3px !important;
 } */
 
+/* Contact Agent Floating Button Start */
+
+.custom-div {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border: 2px solid #16697A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-div img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.float-btn {
+  font-size: 38px;
+}
+
+/* Modal Icons */
+
+.modal-icon {
+  font-size: 30px;
+  color: #16697A !important;
+}
+
+.modal-cols {
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  border: 2.5px solid #16697A;
+  border-radius: 8px;
+  margin: 2%;
+  background-color: #fff;
+
+}
+
+/* AGENT SECTION */
+
+.agent-img {
+  max-width: 40%;
+  min-height: auto;
+  object-fit: cover;
+  position: relative;
+  top: -20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .agent-img {
+    max-width: 80%;
+    min-height: auto;
+    object-fit: cover;
+    position: relative;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+}
+
+.agent-img-modal {
+  max-width: 30%;
+  min-height: auto;
+  object-fit: cover;
+  position: relative;
+  top: -20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2%;
+}
+
+.modal-h5 {
+  color: #fff;
+}
+
+em {
+  font-size: 12px;
+}
+
+/* agent section */
+.contact-profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-profile {
+    flex-direction: column;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile h2 {
+    font-size: 16px;
+  }
+
+  .profile p {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 .video-container-slide {
     display: none !important;
@@ -85,7 +236,7 @@
 
 @media only screen and (max-width: 600px) {
   .sponsors {
-    width: 100% !important;
+    width: 80px !important;
     height: auto !important;
   }
 }
@@ -12265,7 +12416,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0);
 }
 
 .masthead {
@@ -12274,7 +12425,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url('https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;  background-position: center;
+  background: url('https://i.ibb.co/rF6YfG9/masthead.jpg') no-repeat center center;  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -12287,7 +12438,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0);
 }
 
 .masthead-2 {

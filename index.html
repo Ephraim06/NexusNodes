@@ -36,6 +36,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,200&family=Overpass:wght@100;200;300;400;600;700;900&display=swap"
     rel="stylesheet" />
+  <!-- Bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
   <!-- Core theme CSS (includes Bootstrap)-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -102,11 +109,12 @@
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
       <div class="d-flex justify-content-center">
         <div class="text-center">
-          <img class="awv-logo goldenrod-bdr" src="assets/img/logos/awv-logo.jpg" alt="awv-logo" />
+          <!-- <img class="awv-logo goldenrod-bdr" src="assets/img/logos/awv-logo.jpg" alt="awv-logo" width="60px"
+          height="auto" /> -->
           <!-- <h1 class="mx-auto my-0 banner-text mb-lg-5">
               <strong>Albus Waveside Villa</strong>
-            </h1> -->
-          <!-- <a
+            </h1>
+          <a
               class="btn btn-primary montserrat-script bg-site-clr mt-5"
               href="#about"
               >Make an Enquiry</a
@@ -548,8 +556,8 @@
         everyday life. Welcome to a home where luxury knows no bounds.
       </p>
       <div style="text-align: start !important;" class="button-container">
-        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
-          class="no-bg-btn-site-clr montserrat-script btn btn-primary">View Floor Plans</a>
+      <button class="no-bg-btn-site-clr montserrat-script btn btn-primary mb-lg-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Floor Plan images</button>
+
       </div>
     </div>
   </div>
@@ -557,7 +565,7 @@
 
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5 dancing-script" id="exampleModalToggleLabel">Floor Plan</h1>
@@ -608,28 +616,6 @@
       </div>
     </div>
   </div>
-  <button class="no-bg-btn-site-clr montserrat-script btn btn-primary mb-lg-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Floor Plan images</button>
-
-  <!-- Scrollable modal -->
-  <!-- Button trigger modal -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5 montserrat-script" id="staticBackdropLabel">Floor Plans</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="assets/img/floor-plans/first-ground-floor-plan.jpg"
-            style="width: 100% !important; height: auto !important;" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="play-container">
     <div class="image-container">
       <img class="play-btn"
@@ -1135,6 +1121,25 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="contact-profile">
+      <div class="profile">
+    <img src="assets/img/marceleno and jann-wa.png" alt="Person 2">
+    <h2>Jann Gill</h2>
+    <p>Contact Number: <a href="tel:+1987654321">+27 (83) 273-6001</a></p>
+    <p>Email: <a href="mailto:jane.smith@example.com">jann@remaxpa.co.za</a></p>
+  </div>
+  <div class="profile w3-border-bottom w3-border-light-grey mb-5">
+    <img src="assets/img/marceleno-wa.png" alt="Person 1">
+    <h2>Marceleno Volkwyn</h2>
+    <p>Contact Number: <a href="tel:+1234567890">+27 (76) 280-0303</a></p>
+    <p>Email: <a href="mailto:john.doe@example.com">marceleno@remaxpa.co.za</a></p>
+  </div>
+</div>
+
+  </section>
+
   <!-- Contact-->
   <section class="contact-section bg-white">
     <div style="
@@ -1184,9 +1189,9 @@
       </div>
     </div>
   </section>
-  <!-- <section class="contact-section bg-site-clr">
+  <section class="contact-section bg-site-clr">
     <div class="container px-4 px-lg-5 bg-site-clr">
-      <div class="row gx-4 gx-lg-5">
+      <!-- <div class="row gx-4 gx-lg-5">
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
@@ -1221,84 +1226,126 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <footer class="bg-site-clr small text-center text-white">
+        <img src="assets/img/logos/awv-sm-logo.jpg" 
+            alt="" height= "20px"/>
+    <div class="container">
+      27 Albus Drive, Sunset Beach, Cape Town
+    </div><br>
+    <div class="container">
+      Terms and Conditions
+    </div><br>
+    <div class="container">
+      Privacy Policy
+    </div>
+  </footer>
       <div class="social d-flex justify-content-center bg-site-clr">
         <a class="mx-2 text-white" href="#!"><i class="fab fa-facebook-f goldenrod"></i></a>
         <a class="mx-2 text-white" href="#!"><i class="fa-brands fa-instagram fa-lg goldenrod"></i></a>
       </div>
     </div>
-  </section> -->
-  <!-- widget -->
-  <div class="widget-container">
-    <button type="button" class="wa-btn bg-site-clr" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <i class="wa-widget-icon fa-brands fa-whatsapp"></i>
-    </button>
-  </div>
+  </section>
+   <!-- Contact Agent Floating Button Start -->
+    <div class="custom-div">
+      <img
+        src="https://www.theyork.co.za/agent-messenger.gif"
+        alt="contact-agent"
+      />
+    </div>
+    <!-- Contact Agent Floating Button End -->
 
-  <!-- Modal -->
-  <div class="widget-modal modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
-    aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-site-clr">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <h1 class="modal-h1 fs-5 montserrat-script text-white" id="exampleModalLabel">
-            CONTACT OUR TEAM
-          </h1>
-          <p id="output" class="text-white-50 montserrat-script fs-small"></p>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <a style="text-decoration: none !important" href="https://wa.link/bgz8gp">
-              <div class="agent-row row">
-                <div style="padding: 0 !important" class="col-sm-12 widget-img">
-                  <img src="assets/img/marceleno-wa.png" alt="" class="widget-agent-img" />
-                </div>
-                <div style="
-                      padding: 0 !important;
-                      display: flex;
-                      flex-direction: column;
-                    " class="col">
-                  <p class="widget-title montserrat-script fs-small" style="margin-bottom: 0">
-                    Development Expert
-                  </p>
-                  <h6 class="widget-title montserrat-script" style="margin-bottom: 0">
-                    <strong>Marceleno Volkwyn</strong>
-                  </h6>
-                </div>
-              </div>
-            </a>
-            <a style="text-decoration: none !important" href="https://wa.link/tqa0ef">
-              <hr />
-              <div class="agent-row row">
-                <div style="padding: 0 !important" class="col-sm-12 widget-img">
-                  <img src="assets/img/marceleno and jann-wa.png" alt="" class="widget-agent-img" />
-                </div>
-                <div style="
-                      padding: 0 !important;
-                      display: flex;
-                      flex-direction: column;
-                    " class="col">
-                  <p class="widget-title montserrat-script fs-small" style="margin-bottom: 0">
-                    Development Expert
-                  </p>
-                  <h6 class="widget-title montserrat-script" style="margin-bottom: 0">
-                    <strong>Jann Gill</strong>
-                  </h6>
-                </div>
-              </div>
-            </a>
+    <!-- Contact Agent Floating Button Modal Start -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-site-clr">
+            <h2 class="modal-h5 montserrat-script">Contact Agent</h2>
           </div>
-        </div>
-        <div class="modal-footer">
-          <span class="fs-xsmall modal-ftr-text text-black montserrat-script">
-            Alternatively you can call us on 076 280 0303
-          </span>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <img
+                  src="assets/img/marceleno-wa.png"
+                  alt="Andre"
+                  style="width: 100%"
+                  class="agent-img rounded float-start w3-grayscale pt-5"
+                />
+              </div>
+              <div class="col float-start pt-5">
+                <h3>Marceleno Volkwyn</h3>
+                <p class="w3-border-bottom w3-border-light-grey">
+                  Development Expert
+                </p>
+              </div>
+            </div>
+            <p>Choose your preferred communication option below.</p>
+            <div class="container text-center">
+              <div class="row">
+                <div class="modal-cols col">
+                  <a href="https://wa.link/07t1z4"
+                    ><i class="modal-icon fa-brands fa-square-whatsapp"></i
+                  ></a>
+                </div>
+                <div class="modal-cols col">
+                  <a href="mailto:kannemeyer@remaxpa.co.za"
+                    ><i class="modal-icon fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="modal-cols col">
+                  <a href="tel:0847556539"
+                    ><i class="modal-icon fa-solid fa-square-phone"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img
+                  src="assets/img/marceleno and jann-wa.png"
+                  alt="Andre"
+                  style="width: 100%"
+                  class="agent-img rounded float-start w3-grayscale pt-5"
+                />
+              </div>
+              <div class="col float-start pt-5">
+                <h3>Jann Gill</h3>
+                <p class="w3-border-bottom w3-border-light-grey">
+                  Development Expert
+                </p>
+              </div>
+            </div>
+            <p>Choose your preferred communication option below.</p>
+            <div class="container text-center">
+              <div class="row">
+                <div class="modal-cols col">
+                  <a href="https://wa.link/07t1z4"
+                    ><i class="modal-icon fa-brands fa-square-whatsapp"></i
+                  ></a>
+                </div>
+                <div class="modal-cols col">
+                  <a href="mailto:kannemeyer@remaxpa.co.za"
+                    ><i class="modal-icon fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="modal-cols col">
+                  <a href="tel:0847556539"
+                    ><i class="modal-icon fa-solid fa-square-phone"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-  </div>
-
+    </div>
+    <!-- Contact Agent Floating Button Modal End -->
   <!-- Scroll button -->
   <button id="scroll-btn" onclick="scrollToTop()">
     <i class="fa-solid fa-angles-up"></i>
@@ -1307,17 +1354,18 @@
   <!-- Footer-->
   <footer class="footer bg-site-clr small text-center text-white">
     <div class="container px-4 px-lg-5">
-      Copyright &copy; Albus Waveside Villa 2023
+      Copyright &copy; Albus Waveside Villa 2024
     </div>
   </footer>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <!-- * *                               SB Forms JS                               * *-->
-  <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
