@@ -1223,6 +1223,7 @@ display: none !important;
   animation: myAnim 2.5s ease-in-out 0s infinite normal forwards;
   font-size: 80%;
   color: #fff;
+  z-index: 1 !important;
 }
 
 @keyframes myAnim {
@@ -12426,10 +12427,37 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url('https://i.ibb.co/5v8vwDF/masthead.jpg') no-repeat center center;  background-position: center;
+  background: url('https://i.ibb.co/k33h6Cj/3.jpg') no-repeat center center;  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.masthead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.masthead-text {
+  z-index: 1 !important;
+  font-weight: 300 !important;
+}
+
+.masthead-btn{
+  background: none !important;
+  border: 5px solid #fff !important;
+  cursor: pointer;
+  z-index: 2 !important;
+}
+
+.masthead-btn:hover {
+  border: 5px solid #16697A;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -12437,14 +12465,17 @@ body {
       position: relative;
       width: 100%;
       height: auto;
-      min-height: 35rem;
+      min-height: 15rem !important;
       padding: 15rem 0;
-      background: url('https://i.ibb.co/X7hwG86/20240218-182108.jpg') no-repeat center center;
+      background: url('https://i.ibb.co/WckSq9f/2-mobile.jpg') no-repeat center center;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-size: cover;
     }
+  .masthead-text {
+    z-index: 1 !important;
+}
 }
 
 .masthead-2::before {
