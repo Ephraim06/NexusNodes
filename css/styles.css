@@ -64,30 +64,28 @@
 /* AGENT SECTION */
 
 .agent-img {
-  max-width: 40%;
-  min-height: auto;
-  object-fit: cover;
-  position: relative;
-  top: -20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  max-width: 30%;
+  margin-left: 30px !important;  
 }
 
 @media only screen and (max-width: 600px) {
   .agent-img {
-    max-width: 80%;
-    min-height: auto;
-    object-fit: cover;
-    position: relative;
-    top: -20px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    max-width:100px;
+    margin-left: 15px !important;
   }
+  .agent-img-col{
+  margin-left: -110px !important;
+  text-align: start !important;
+  align-items: center;
+  margin-bottom: -40px !important;
+ }
+}
 
+.agent-img-col {
+  margin-left: -200px;
+  text-align: start !important;
+  align-items: center;
+  margin-bottom: -40px !important;
 }
 
 .agent-img-modal {
