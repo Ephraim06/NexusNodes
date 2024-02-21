@@ -365,6 +365,18 @@ html{
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .accordion {
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.accordion-body{
+  font-size: small !important;
+}
+
 .mr-5{
   margin-right: 5% !important;
   color: goldenrod !important;
