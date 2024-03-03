@@ -12488,6 +12488,9 @@ body {
   .masthead-text {
     z-index: 1 !important;
 }
+.project-text {
+  margin-top: 20px !important;
+}
 }
 
 .masthead-2::before {
@@ -12590,7 +12593,7 @@ body {
 .signup-section {
   padding: 10rem 0;
   background: rgb(252, 252, 252);
-  background: linear-gradient(180deg, rgba(252, 252, 252, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.9248949579831933) 100%), url("https://images.unsplash.com/photo-1550435680-0c687d264d73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.9248949579831933) 100%), url("https://images.unsplash.com/photo-1549534654-9b4b9923ea00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12605,6 +12608,52 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+
+.text-none{
+  text-decoration: none !important;
+}
+
+/* Default styles for desktop */
+.card.listing-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 50% !important;
+  border: 1px solid #16697A !important;
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px !important;
+  transition: transform 0.2s;
+  margin: auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .card.listing-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    width: 100% !important;
+    border: 1px solid #007EC9;
+    border-radius: 5px;
+    padding: 25px 25px 25px 25px !important;
+    transition: transform 0.2s;
+    margin: auto !important;
+  }
+}
+
+.card-img-top {
+  width: 100% !important;
+  height: auto;
+  border-radius: 5px !important;
+}
+
+.available-btn {
+  border: #2196f3 solid;
+  color: black;
+  background-color: #fff !important;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .contact-section {
