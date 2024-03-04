@@ -58,6 +58,34 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Set the launch date (YYYY, MM, DD, HH, MM, SS)
+  const launchDate = new Date(2024, 2, 18, 1, 0, 0).getTime();
+
+  // Function to update the countdown timer
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const timeRemaining = launchDate - now;
+
+    if (timeRemaining > 0) {
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      // Update the countdown timer
+      document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+      document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+    } else {
+      // Display a message when the countdown ends
+      document.getElementById('countdown').innerHTML = 'Development Launch!';
+    }
+  }
+
+  // Update the countdown timer every second
+  setInterval(updateCountdown, 1000);
+
 // Optional: Add more items to the marquee dynamically
 // const marqueeList = document.querySelector('.text-marquee');
 // const newItems = ['SALES LAUNCHED •', 'DONT MISS OUT •', 'SALES LAUNCHED •'];
