@@ -1190,7 +1190,7 @@ display: none !important;
   }
 }
 
-.logo {
+.logo-wheel {
   position: absolute;
   width: var(--d-inner);
   height: var(--d-inner);
