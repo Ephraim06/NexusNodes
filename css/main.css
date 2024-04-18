@@ -432,6 +432,13 @@ input[type="date" i] {
   right: 12px !important;
 }
 
+.dropdown-menu {
+  height: auto;
+  margin: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 
 /*[ dropdown option ]
 ===========================================================*/
@@ -523,9 +530,17 @@ input[type="date" i] {
   padding: 0 !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .logo>a>img {
+      width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
+}
+
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 40% !important;
+    width: 50% !important;
     height: auto !important;
     }
 }
@@ -534,13 +549,6 @@ input[type="date" i] {
   display: block;
   height: 100%;
 }
-
-.logo > a > img {
-  width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
 
 /*[ Menu ]
 -----------------------------------------------------------
@@ -750,8 +758,8 @@ input[type="date" i] {
 .btn-hide-sidebar {
   position: absolute;
   font-size: 20px;
-  color: #fff !important;
-  background-color: #000 !important;
+  color: #000 !important;
+  background-color: #fff !important;
   padding: 10px;
   top: 20px;
   right: 20px;
