@@ -1219,8 +1219,9 @@ p {
   height: var(--d-inner);
   background: url(https://i.ibb.co/xCBDPqM/Group-A0002-modified.png);
   background-size: cover;
-  border: goldenrod 2px solid;
+  border: #046582 2px solid;
   border-radius: 50%;
+  font-size: medium !important;
   filter: contrast(1.5);
 }
 
@@ -1228,10 +1229,10 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: small !important;
+  font-size: xx-small !important;
   color: #046582 !important;
   font-family: 'Dancing Script', cursive !important;
-  animation: rotateText 18s linear infinite;
+  animation: rotateText 60s linear infinite;
 }
 
 @keyframes rotateText {
@@ -1247,7 +1248,7 @@ p {
 .text p span {
   position: absolute;
   left: 50%;
-  font-size: 1.2em;
+  font-size: 1em;
   transform-origin: 0 var(--radius);
 }
 
@@ -5192,6 +5193,14 @@ fieldset:disabled .btn {
 
 .dropdown-toggle:empty::after {
   margin-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown-menu {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-color: goldenrod !important;
+  }
 }
 
 .dropdown-menu {
