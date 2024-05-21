@@ -765,6 +765,10 @@ html {
   }
 }
 
+.w3-grayscale {
+  filter: grayscale(60%);
+}
+
 .w3-border-bottom {
   border-bottom: 1px solid #ccc !important;
 }
@@ -775,7 +779,9 @@ html {
 .w3-hover-border-light-gray:hover {
   border-color: #f1f1f1 !important;
 }
-
+.whitespace {
+  margin-bottom: 80px !important;
+}
 .w3-padding-16 {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
