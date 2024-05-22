@@ -10,6 +10,26 @@
   border-radius: 3px !important;
 } */
 
+@media only screen and (max-width: 600px) {
+  .agent-office-logo {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto !important;
+  }
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.agent-office-logo {
+  width: 30% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+}
+
 .count-down {
   font-size: x-large;
   color: goldenrod !important;
@@ -759,11 +779,11 @@ html {
 }
 
 /* Media Query to hide the button on screens with a maximum width of 767 pixels (mobile) */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   #scroll-btn {
     display: none !important;
   }
-}
+} */
 
 .w3-grayscale {
   filter: grayscale(60%);
