@@ -323,6 +323,7 @@ html {
   backdrop-filter: blur(8.1px) !important;
   -webkit-backdrop-filter: blur(8.1px) !important;
   width: 50% !important;
+  border: 3px solid #40c0cb !important;
   height: auto !important;
   z-index: 1 !important;
   margin: auto !important;
@@ -482,7 +483,7 @@ html {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
-  border-radius: 50px !important;
+  border-radius: 8px !important;
   font-family: 'Montserrat', sans-serif;
 }
 
