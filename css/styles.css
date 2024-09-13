@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .custom-card {
-  border: 1px solid goldenrod !important;
+  border: 1px solid #003DA5 !important;
   border-radius: 8px;
   padding: 2px;
 }
@@ -38,7 +38,7 @@
 
 .count-down {
   font-size: x-large;
-  color: goldenrod !important;
+  color: #003DA5 !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400 !important;
   margin: 10px 0;
@@ -439,7 +439,7 @@ html {
 
 .mr-5 {
   margin-right: 5% !important;
-  color: goldenrod !important;
+  color: #003DA5 !important;
   font-size: x-large !important;
 }
 
@@ -525,7 +525,7 @@ html {
 }
 
 .circled-bdr {
-  border: 1px solid goldenrod !important;
+  border: 1px solid #003DA5 !important;
   border-radius: 50px !important;
   margin-left: 20% !important;
   margin-right: 20% !important;
@@ -684,7 +684,7 @@ html {
 }
 
 .goldenrod-bdr {
-  border: 3px solid goldenrod !important;
+  border: 3px solid #003DA5 !important;
 }
 
 .site-clr-bdr {
@@ -707,7 +707,7 @@ html {
 }
 
 .spinner-border {
-  color: goldenrod !important;
+  color: #003DA5 !important;
 }
 
 #scroll-btn {
@@ -776,7 +776,7 @@ html {
 }
 
 #scroll-btn:hover {
-  background-color: goldenrod !important;
+  background-color: #003DA5 !important;
   color: #fff !important;
   opacity: 100% !important;
 }
@@ -893,7 +893,7 @@ html {
 }
 
 .wa-btn:hover {
-  background-color: goldenrod !important;
+  background-color: #003DA5 !important;
   color: #fff !important;
 }
 
@@ -937,7 +937,7 @@ html {
 .close-btn {
   float: right;
   cursor: pointer;
-  color: goldenrod !important;
+  color: #003DA5 !important;
 }
 
 .chat-content {
@@ -988,7 +988,7 @@ input[type="text"] {
 
 video {
   border-radius: 4px !important;
-  border: 2px solid goldenrod !important;
+  border: 2px solid #003DA5 !important;
 }
 
 .row {
@@ -1106,12 +1106,12 @@ p {
 
 .banner-text {
   font-family: 'Dancing Script', cursive !important;
-  color: goldenrod !important;
+  color: #003DA5 !important;
 }
 
 .banner-text-btm {
   font-family: 'Dancing Script', cursive !important;
-  color: goldenrod !important;
+  color: #003DA5 !important;
 }
 
 .dancing-script {
@@ -1329,7 +1329,7 @@ p {
 .scroll-icon:hover {
   background-color: transparent;
   color: #046582 !important;
-  border-color: goldenrod !important;
+  border-color: #003DA5 !important;
   cursor: pointer;
   transition: background-color 1s, border-color 1s;
 }
@@ -1355,7 +1355,7 @@ p {
 }
 
 .goldenrod {
-  color: goldenrod !important;
+  color: #003DA5 !important;
 }
 
 .text-marquee {
@@ -4743,7 +4743,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: goldenrod;
+  --bs-btn-bg: #003DA5;
   --bs-btn-border-color: #87CEEB;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #046582;
@@ -4767,13 +4767,13 @@ fieldset:disabled .btn {
 }
 
 .no-bg-btn-gold {
-  border: 2px solid goldenrod !important;
+  border: 2px solid #003DA5 !important;
   background-color: #fff !important;
   color: #000 !important;
 }
 
 .no-bg-btn-gold-2 {
-  border: 2px solid goldenrod !important;
+  border: 2px solid #003DA5 !important;
   background-color: #fff !important;
   border-radius: 3px;
   padding: 10px;
@@ -4788,7 +4788,7 @@ fieldset:disabled .btn {
 
 .nav-icon-social {
   font-size: xx-large;
-  color: goldenrod !important;
+  color: #003DA5 !important;
   box-shadow: none !important;
   padding: 2px !important;
 }
@@ -5241,7 +5241,7 @@ fieldset:disabled .btn {
   .dropdown-menu {
     margin: 0 !important;
     padding: 0 !important;
-    border-color: goldenrod !important;
+    border-color: #003DA5 !important;
   }
 }
 
@@ -6007,7 +6007,7 @@ fieldset:disabled .btn {
     height: auto !important;
     visibility: visible !important;
     background-color: transparent !important;
-    border: 3px solid goldenrod !important;
+    border: 3px solid #003DA5 !important;
     transform: none !important;
     transition: none;
   }
@@ -6064,7 +6064,7 @@ fieldset:disabled .btn {
     height: auto !important;
     visibility: visible !important;
     background-color: transparent !important;
-    border: 3px solid goldenrod !important;
+    border: 3px solid #003DA5 !important;
     transform: none !important;
     transition: none;
   }
@@ -6121,7 +6121,7 @@ fieldset:disabled .btn {
     height: auto !important;
     visibility: visible !important;
     background-color: transparent !important;
-    border: 3px solid goldenrod !important;
+    border: 3px solid #003DA5 !important;
     transform: none !important;
     transition: none;
   }
@@ -6178,7 +6178,7 @@ fieldset:disabled .btn {
     height: auto !important;
     visibility: visible !important;
     background-color: transparent !important;
-    border: 3px solid goldenrod !important;
+    border: 3px solid #003DA5 !important;
     transform: none !important;
     transition: none;
   }
@@ -6235,7 +6235,7 @@ fieldset:disabled .btn {
     height: auto !important;
     visibility: visible !important;
     background-color: transparent !important;
-    border: 3px solid goldenrod !important;
+    border: 3px solid #003DA5 !important;
     transform: none !important;
     transition: none;
   }
@@ -6291,7 +6291,7 @@ fieldset:disabled .btn {
   height: auto !important;
   visibility: visible !important;
   background-color: transparent !important;
-  border: 3px solid goldenrod !important;
+  border: 3px solid #003DA5 !important;
   transform: none !important;
   transition: none;
 }
@@ -6600,7 +6600,7 @@ fieldset:disabled .btn {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: goldenrod !important;
+  border-color: #003DA5 !important;
   outline: 0;
   box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
@@ -14325,7 +14325,7 @@ body {
   }
 
   #mainNav .nav-link:hover {
-    color: goldenrod !important;
+    color: #003DA5 !important;
   }
 
   #mainNav .nav-link:active {
